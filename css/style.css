@@ -1,0 +1,142 @@
+@charset 'utf-8';
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #806342;
+  background-color: #fff;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+}
+/* 各要素の初期スタイル調整 */
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+.top-logo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;   /* Stacks the h1 and p vertically */
+    justify-content: center;  /* Centers them vertically */
+    align-items: center;      /* Centers them horizontally */
+    padding: 0px 350px;
+}
+nav{
+    margin-left: -50px;
+}
+nav ul{
+    display: flex;               /* Aligns items in a horizontal row */
+    justify-content: center;     /* Centers items horizontally */
+    align-items: center;  
+}
+nav ul li{
+    padding:0 20px;
+    float: left;
+    list-style: none;
+    border-right: 5px solid #806342;
+}
+nav ul li:last-child{
+    border: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    /* Make the text transparent so the background shows through */
+  color: transparent;
+  /* A gradient where orange and black switch at 50% */
+  background: linear-gradient(to right, rgb(186, 130, 46) 50%, #000 50%) 100%;
+  /* Clip the background to the text */
+  background-clip: text;
+
+  /* Make it 200% wide so the orange portion stays hidden */
+  background-size: 200% 100%;
+
+  transition: background-position 0.3s;
+}
+
+
+nav ul li a:hover {
+  /* Move the gradient to reveal the orange portion */
+  background-position: 0 100%;
+}
+section{
+    margin: 30px 0 45px 0;
+}
+section img{
+    margin-top: 30px;
+}
+#about{
+    text-align: center;
+}
+#about p{
+    letter-spacing: 2;
+    line-height: 2;
+}
+#menu{
+    text-align: center;
+}
+#menu span{
+    letter-spacing: 1;
+    line-height: 1;
+   display: list-item;
+  list-style-type: disc; /* Adds a bullet point */
+  list-style-position: inside; /* Keeps the bullet inside the paragraph box */
+}
+#photos{
+    text-align: center;
+}
+figcaption{
+    text-align: left;
+}
+#access{
+    text-align: center;
+}
+.sub-container{
+    width: 800px;
+    padding: 40px 400px;
+}
+.contact{
+    width: 400px;
+    float: left;
+    padding-top: 100px;
+}
+.map{
+    float: left;
+}
+.map img{
+    width: 400px;
+}
+footer{
+    padding: 40px 450px;
+    height: 80px;
+    background-color:#806342;
+}
+#nav-bot ul{
+    display: flex; 
+    margin:20px 0 0 100px;            
+}
+
+#nav-bot ul li{
+    padding:0 20px;
+    float: left;
+    list-style: none;
+    border-right: 4px solid white;
+}
+#nav-bot ul li:last-child{
+    border: 0;
+}
+#nav-bot ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer img{
+    float: left;
+
+}
+footer span{
+    color: white;
+    padding-left: 180px;
+}
